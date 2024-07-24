@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container-capa{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+/*-----navegação-----*/
+
+#container-capa .container-nav{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+
+
+
+#container-capa .container-nav .menu{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    margin: 25px;
+
+    text-decoration: none;
+    color: white;
+}
+
+
+#container-capa .container-nav .menu::after{
+    content:" ";
+    width: 0px;
+    height: 3px;
+    background-color: #65215C;
+    border-radius: 3px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: 0.5s;
+}
+
+#container-capa .container-nav .menu:hover::after{
+    width: 40px;
+}
+
+
+#container-capa .container-nav .menu-maior{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    margin: 20px;
+
+    text-decoration: none;
+    color: white;
+}
+
+#container-capa .container-nav .menu-maior::after{
+    content: " ";
+    width: 0px;
+    height: 3px;
+    background-color: #65215C;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    transition: 0.5s;
+}
+
+#container-capa .container-nav .menu-maior:hover::after{
+    width: 90px;
+
+}
+
+
+
+/*-----fim navegação-----*/
+
+
+#container-capa .foto-capa{
+  width: 100%;  
+  height: 947px;
+  display: block;
+}
+
+#container-capa .container-logo{
+    position: absolute;
+    top: 0%;
+    left: 80%;
+
+}
+
+.container-logo .logo-capa{
+    width: 300px;
+    height: 200px;
+
+}
+
+#container-capa .container-texto-capa{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 45%;
+    
+    
+    width: 700px;
+    text-align: justify;
+    
+}
+
+#container-capa .container-texto-capa #titulo-capa{
+    letter-spacing: 10px;
+    color: #481E50;
+    text-align: center;
+    font-size: 40px;
+}
+
+#container-capa .container-texto-capa .btn-capa{
+    border: 0;
+    align-self: center;
+    margin-top: 25px;
+
+    background-color: rgba(90, 90, 90, 0.568);
+
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+
+    border-radius: 5px;
+
+}
+
+#container-capa .container-texto-capa .btn-capa .link-capa{
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    
+}
+
+#container-capa .container-texto-capa .btn-capa:hover{
+    background-color: rgb(172, 171, 171);
+    transform: translate(-1px, 1px);
+    transition: transform 0.2s;
+}

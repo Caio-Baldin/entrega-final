@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container-nav .container-menu .logo-sorriso{
+    width: 250px;
+    height: 300px;
+
+    
+}
+
+/*----------inicio nav------*/
+
+.container-nav .container-menu{
+    display: flex;
+    justify-content: space-evenly;
+    height: 3em;
+    
+    align-items: center;
+    background-image: linear-gradient(to right, #65215C, #481e5045);
+}
+
+.container-nav .container-menu .menu{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    text-decoration: none;
+
+    color: white;
+
+    
+}
+
+.container-nav .container-menu .menu::after{
+    content: " ";
+    width: 0px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.container-nav .container-menu .menu:hover::after{
+    width: 50px;
+}
+
+.container-nav .container-menu .menu-maior{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+.container-nav .container-menu .menu-maior::after{
+    content: " ";
+    width: 0px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.container-nav .container-menu .menu-maior:hover::after{
+    width: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*fim nav*/
+
+
+
+.container-contato{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-contato .logo-rosa{
+    width: 400px;
+    height: 400px;
+
+    margin-left: 200px;
+    
+}
+
+.container-contato .fundo-rosa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #65215C;
+
+    width: 50%;
+    height: 950px;
+}
+
+.container-contato .fundo-rosa .fundo-br{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 500px;
+    height: 700px;
+    background-color: white;
+    border-radius: 25px;
+    
+}
+
+.container-contato .fundo-rosa .fundo-br .container-input{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container-contato .fundo-rosa .logo-orto{
+    width: 300px;
+    height: 200px;
+}
+
+
+
+
+.container-contato .fundo-rosa .teste{
+    display: flex;
+   
+}
+
+.container-contato .fundo-rosa .fundo-br .enviar{
+    background-color: #490839;
+    border: 0;
+
+    margin-top: 15px;
+    width: 100px;
+    height: 25px;
+    align-self: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-contato .fundo-rosa .fundo-br .enviar a{
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+    
+}
+
+.container-contato .fundo-rosa .fundo-br .enviar:hover{
+    background-color: #4e215d;
+    transform: translate(-3px, -3px);
+    transition: transform 0.5s;
+}
+
+.container-contato .fundo-rosa .fundo-br .btn-localizacao{
+    margin-top: 200px;
+
+    background-color: #6B9CC5;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    width: 120px;
+    height: 20px;
+    align-self: center;
+}
+
+.container-contato .fundo-rosa .fundo-br .btn-localizacao a{
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+}
+
+.container-contato .fundo-rosa .fundo-br .btn-localizacao:hover{
+    background-color: #2f539a;
+    transform: translate(-2px, -2px);
+    transition: transform 0.4s;
+}

@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ------NAVEGAÇAO----*/
+
+.container-nav .container-menu .logo-sorriso{
+    width: 250px;
+    height: 300px;
+
+    
+}
+
+
+.container-nav .container-menu{
+    display: flex;
+    justify-content: space-evenly;
+    height: 3em;
+    align-items: center;
+    background-image: linear-gradient(to right, #65215C, #481e5045);
+}
+
+.container-nav .container-menu .menu{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    text-decoration: none;
+
+    color: white;
+
+    
+}
+
+.container-nav .container-menu .menu::after{
+    content: " ";
+    width: 0px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.container-nav .container-menu .menu:hover::after{
+    width: 50px;
+}
+
+.container-nav .container-menu .menu-maior{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+.container-nav .container-menu .menu-maior::after{
+    content: " ";
+    width: 0px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.container-nav .container-menu .menu-maior:hover::after{
+    width: 120px;
+}
+
+/*---- FIM NAV - INICIO CAROUSEL-----*/
+
+#container-carousel{
+    margin-top: 1px;
+}
+
+#container-carousel #banner .carousel-inner{
+    height: 30em;
+}
+
+#container-carousel #banner .carousel-inner .foto1{
+    background-image: url(imagens/foto1.jpg);
+    height: 30em;
+    background-size: contain;
+
+}
+
+#container-carousel #banner .carousel-inner .foto2{
+    background-image: url(imagens/foto2.jpg);
+    height: 30em;
+    background-size: contain;
+    
+}
+
+#container-carousel #banner .carousel-inner .foto3{
+    background-image: url(imagens/foto3.jpg);
+    height: 30em;
+    background-size: contain;
+    
+}
+
+#container-carousel #banner .carousel-inner .foto4{
+    background-image: url(imagens/foto4.jpg);
+    height: 30em;
+    background-size: contain;
+    
+}
+
+#container-carousel #banner .carousel-inner .foto5{
+    background-image: url(imagens/foto5.jpeg);
+    height: 30em;
+    background-size: contain;
+}
+
+#container-carousel #banner .carousel-inner .foto6{
+    background-image: url(imagens/foto6.jpeg);
+    height: 30em;
+    background-size: contain;
+    
+}
+
+/* -----FIM CAROUSEL -- Inicio main ------ */
+
+.container-conteudo{
+
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.container-conteudo .foto-texto-sorriso{
+    width: 400px;
+    height: 300px;
+
+    border-radius: 10px;
+}
+
+.container-conteudo .texto-conteudo .titulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+
+    
+    text-align: center;
+    color: #65215C;
+}
+
+.container-conteudo .texto-conteudo .texto{
+    width: 500px;
+    text-align: justify;
+}
+
+/*final trecho mudando vidar --- inicio trecho divisao*/
+
+
+.container-divisao{
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 100px;
+
+}
+
+.container-divisao section.img{
+    width: 500px;
+    height: 800px;
+
+    background-image: url(imagens/foto-estetica.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container-divisao .img .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: black;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.container-divisao .img .overlay:hover{
+    opacity: 0.8;
+}
+
+/*divisao 2*/
+
+section.img2{
+    width: 500px;
+    height: 800px;
+
+    background-image: url(imagens/capa3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container-divisao section.img2 .overlay2{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: black;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container-divisao section.img2 .overlay2:hover{
+    opacity: 0.8;
+}
+
+/*divisao 3 */
+
+.container-divisao section.img3{
+    width: 500px;
+    height: 800px;
+
+    background-image: url(imagens/capa5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+.container-divisao section.img3 .overlay3{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: black;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container-divisao section.img3 .overlay3:hover{
+    opacity: 0.8;
+}
+
+/*final divisoria de imagens*/
+
+.bene{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 500px;
+
+    margin: 5%;
+
+    background-color: #65215c;
+    border-radius: 10px;
+}
+
+section .bene .container-titulo-bene{
+    margin-left: 50px;
+    
+}
+
+section .bene .titulo-bene{
+    color: white;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+}
+
+.bene .container-list-bene{
+    color: white;
+    width: 500px;
+}
+
+.bene .container-list-bene li{
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/*final bene--- inicio footer*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer .logo-footer{
+    width: 400px;
+    height: 400px;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/*-----navegacao-----*/
+
+
+.container-nav-esp{
+    display: flex;
+    justify-content: space-evenly;
+
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.container-nav-esp .menu{
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+
+}
+
+.container-nav-esp .menu::after{
+    content: " ";
+    width: 0px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: 0.5s;
+
+}
+
+.container-nav-esp .menu:hover::after{
+    width: 40px;
+}
+
+.container-nav-esp .menu-maior{
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+.container-nav-esp .menu-maior::after{
+    content: " ";
+    width: 0px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: 0.5s;
+
+}
+
+.container-nav-esp .menu-maior:hover::after{
+    width: 100px;
+}
+
+
+
+/*------fim navegacao------*/
+
+.img{
+    display: flex;
+    flex-direction: row;
+    
+    width: 100%;
+    height: 100%;
+
+    background-image: url(imagens/capa2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+
+}
+
+.img .overlay{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: black;
+    opacity: 0.6;
+}
+
+
+.img .fundo-br{
+    width: 100%;
+    height: 700px;
+
+    background-color: rgb(71, 70, 70);
+    position: relative;
+    
+}
+
+.img .conteudo .foto-conteudo1{
+    width: 100%;
+    height: 50%;
+}
+
+.img .conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    z-index: 2;
+    top: 20%;
+
+    width: 300px;
+    height: 600px;
+
+    margin-left: 100px;
+    
+
+}
+
+.img .conteudo .titulo-implantes{
+    letter-spacing: 5px;
+    margin-top: 10px;
+   color: #481E50;
+
+}
+
+.img .conteudo .texto-card{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+.img .btn-implantes{
+    border: 0;
+    width: 150px;
+    height: 30px;
+    margin-top: 15px;
+
+    border-radius: 7px;
+
+    background-color: #ab9ea9;
+
+    cursor: pointer;
+    
+    
+}
+
+.img .btn-implantes a{
+    text-decoration: none;
+    color: white;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    letter-spacing: 2px;
+}
+
+.img .btn-implantes:hover{
+    background-color: #481E50;
+    transform: translate(-1px, -3px);
+    transition: 0.5s;
+
+}
+
+
+.img .conteudo2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 2;
+    top: 20%;
+
+    width: 300px;
+    height: 600px;
+
+    margin-left: 500px;
+    box-shadow: 1px 1px 5px black;
+
+}
+
+.img .conteudo2 .foto-conteudo2{
+    width: 100%;
+    height: 50%;
+}
+
+.img .conteudo2 .titulo-endo{
+   letter-spacing: 5px; 
+   margin-top: 10px;
+   color: #481E50;
+
+}
+
+.img .conteudo2 .texto-card2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+.img .conteudo3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    z-index: 2;
+    top: 20%;
+
+    width: 300px;
+    height: 600px;
+
+    margin-left: 1100px;
+}
+
+.img .conteudo3 .foto-conteudo3{
+    width: 100%;
+    height: 50%;
+}
+
+.img .conteudo3 .titulo-orto{
+    letter-spacing: 5px;
+    margin-top: 10px;
+    color: #481E50;
+}
+
+.img .conteudo3 .texto-card3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+
+.img .conteudo4{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    z-index: 2;
+    top: 20%;
+
+    width: 300px;
+    height: 600px;
+
+    margin-left: 1500px;
+}
+
+.img .conteudo4 .foto-conteudo4{
+    width: 100%;
+    height: 50%;
+}
+
+.img .conteudo4 .titulo-estetica{
+    color: #481E50;
+    margin-top: 10px;
+    letter-spacing: 5px;
+}
+
+.img .conteudo4 .texto-card4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+
+
+
